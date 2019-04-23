@@ -214,7 +214,7 @@ function checkTimeout(){
   let time = new Date().valueOf()
   let remove = []
   points.forEach((value, key)=>{
-    if((time-value.time) > 200){ // Refreshes every ~20
+    if((time-value.time) > 1000){ // Refreshes every ~20
       console.log("Removed!")
       remove.push(key)
     }
